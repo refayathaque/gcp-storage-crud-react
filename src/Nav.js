@@ -2,29 +2,29 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav class="nav p-2 bg-dark">
-      <Link class="nav-link" to="/">
+    <nav className="nav p-2 bg-dark">
+      <Link className="nav-link" to="/">
         List buckets
       </Link>
-      <Link class="nav-link" to="/listObjects">
+      <Link className="nav-link" to="/listObjects">
         List objects
       </Link>
-      <Link class="nav-link" to="/createBuckets">
+      <Link className="nav-link" to="/createBuckets">
         Create buckets
       </Link>
-      <Link class="nav-link" to="/deleteBuckets">
+      <Link className="nav-link" to="/deleteBuckets">
         Delete buckets
       </Link>
-      <Link class="nav-link" to="/updateBuckets">
+      <Link className="nav-link" to="/updateBuckets">
         Update buckets
       </Link>
-      <Link class="nav-link" to="/addObjects">
+      <Link className="nav-link" to="/addObjects">
         Add objects
       </Link>
-      <Link class="nav-link" to="/deleteObjects">
+      <Link className="nav-link" to="/deleteObjects">
         Delete objects
       </Link>
-      <Link class="nav-link" to="/updateObjects">
+      <Link className="nav-link" to="/updateObjects">
         Update objects
       </Link>
     </nav>
