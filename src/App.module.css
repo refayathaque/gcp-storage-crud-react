@@ -1,9 +1,6 @@
 .pagewrap {
   display: flex;
-  /*vertically stack children*/
   flex-direction: column;
-  /* expand to take full height of page */
-  /* min-height overrides both height & max-height */
   min-height: 100vh;
 }
 main {
@@ -13,5 +10,5 @@ main {
   margin: 0em !important;
   /* need !important to overwrite bootstrap margins */
   /* padding: 0em !important; */
-  /* but makes everything fugly */
+  /* ^ makes everything fugly */
 }
