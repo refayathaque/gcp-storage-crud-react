@@ -10,25 +10,10 @@ import UpdateBuckets from "./components/storage-operations/UpdateBuckets";
 import AddObjects from "./components/storage-operations/AddObjects";
 import DeleteObjects from "./components/storage-operations/DeleteObjects";
 import UpdateObjects from "./components/storage-operations/UpdateObjects";
-import { useSelector, useDispatch } from "react-redux";
-import { counterActions } from "./store";
+// import ReduxBasics from "./components/learning/ReduxBasics";
+import ReduxAdvanced from "./components/learning/ReduxAdvanced";
 
 const App = () => {
-  const dispatch = useDispatch();
-
-  const counter = useSelector((state) => state.counter.counter);
-  const show = useSelector((state) => state.counter.showCounter);
-
-  const increaseHandler = () => {
-    dispatch(counterActions.increase(5));
-  };
-  const decreaseHandler = () => {
-    dispatch(counterActions.decrease(5));
-  };
-  const toggleHandler = () => {
-    dispatch(counterActions.toggle());
-  };
-
   return (
     <div className={classes.pagewrap}>
       <nav>
@@ -38,18 +23,7 @@ const App = () => {
         <h1>GCP Storage Management</h1>
         <p>hello again</p>
         <p>hello again</p>
-
-        <div className="border border-primary">
-          <p>Redux counter example</p>
-          {show && <p>{counter}</p>}
-          <button onClick={increaseHandler}>Increase</button>
-          <button onClick={decreaseHandler}>Decrease</button>
-          <button onClick={toggleHandler}>Toggle</button>
-        </div>
-        <div className="mt-2 border border-success">
-          <p>Redux auth example</p>
-        </div>
-
+        <ReduxAdvanced />
         <Routes>
           <Route path="/" element={<ListBuckets />} />
           <Route path="listObjects" element={<ListObjects />} />
