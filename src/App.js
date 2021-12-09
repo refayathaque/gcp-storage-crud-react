@@ -12,6 +12,7 @@ import DeleteObjects from "./components/storage-operations/DeleteObjects";
 import UpdateObjects from "./components/storage-operations/UpdateObjects";
 // import ReduxBasics from "./components/learning/ReduxBasics";
 import ReduxAdvanced from "./components/learning/ReduxAdvanced";
+import AsyncBasics from "./components/learning/AsyncBasics";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <h1>GCP Storage Management</h1>
         <p>hello again</p>
         <p>hello again</p>
+        {/* <AsyncBasics /> */}
         <ReduxAdvanced />
         <Routes>
           <Route path="/" element={<ListBuckets />} />
