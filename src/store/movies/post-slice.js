@@ -3,7 +3,7 @@ import axios from "axios";
 
 // change values below accordingly
 const what = "Movies"; // i.e., what are you GETing, POSTing, PUTing, etc., have first letter capitalized
-const endpoint = "api/movies";
+const endpoint = "api/moves";
 
 // change name of arrow function below from `postMovies` to `post${what}`, you set `what` above
 const postMovies = createAsyncThunk(
@@ -32,8 +32,8 @@ const slice = createSlice({
         console.log("action.payload", action.payload);
         if (state.loading === "pending") {
           state.loading = "idle";
-          // change `movies` to lower-cased `what`
-          state.entities = action.payload.data.movies;
+          // change `movie` to lower-cased `what` (will be singular if configuring for use with mirage)
+          state.entities = action.payload.data.movie;
         }
       })
       // change `postMovies` below to `post${what}`
