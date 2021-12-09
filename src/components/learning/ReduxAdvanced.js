@@ -1,9 +1,12 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { getMovies } from "../../store/movies-slice";
+import { getMovies } from "../../store/movies/get-slice";
 
 const ReduxAdvanced = () => {
-  const { entities, loading, error } = useSelector((state) => state.movies);
+  const { entities, loading, error } = useSelector((state) => {
+    console.log("redux state", state);
+    return state.getMoviesReducer;
+  });
   const dispatch = useDispatch();
 
   useEffect(() => {
