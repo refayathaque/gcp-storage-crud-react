@@ -3,7 +3,7 @@ import axios from "axios";
 
 // change values below accordingly
 const what = "Movies"; // i.e., what are you GETing, POSTing, PUTing, etc., have first letter capitalized
-const endpoint = "api/moves";
+const endpoint = "api/movies";
 
 // change name of arrow function below from `postMovies` to `post${what}`, you set `what` above
 const postMovies = createAsyncThunk(
