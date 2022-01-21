@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
-import { authActions } from "../../store/auth";
-import { counterActions } from "../../store/counter";
+import { authActions } from "../../store/auth-slice";
+import { counterActions } from "../../store/counter-slice";
 
 const ReduxBasics = () => {
   const dispatch = useDispatch();

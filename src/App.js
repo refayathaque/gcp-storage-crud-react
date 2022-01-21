@@ -10,9 +10,9 @@ import UpdateBuckets from "./components/storage-operations/UpdateBuckets";
 import AddObjects from "./components/storage-operations/AddObjects";
 import DeleteObjects from "./components/storage-operations/DeleteObjects";
 import UpdateObjects from "./components/storage-operations/UpdateObjects";
-// import ReduxBasics from "./components/learning/ReduxBasics";
-import ReduxAdvanced from "./components/learning/ReduxAdvanced";
 import AsyncBasics from "./components/learning/AsyncBasics";
+import ReduxBasics from "./components/learning/ReduxBasics";
+import ReduxAdvanced from "./components/learning/ReduxAdvanced";
 
 const App = () => {
   return (
@@ -22,9 +22,9 @@ const App = () => {
       </nav>
       <main className="p-4">
         <h1>GCP Storage Management</h1>
-        <p>hello again</p>
-        <p>hello again</p>
+        <p>hello</p>
         {/* <AsyncBasics /> */}
+        {/* <ReduxBasics /> */}
         <ReduxAdvanced />
         <Routes>
           <Route path="/" element={<ListBuckets />} />
@@ -38,7 +38,7 @@ const App = () => {
         </Routes>
       </main>
       <footer>
-        <Footer></Footer>
+        <Footer branding="somtum.io" version="v.0.0.0"></Footer>
       </footer>
     </div>
   );

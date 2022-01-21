@@ -20,6 +20,7 @@ const ReduxAdvanced = () => {
     console.log("redux state.postMoviesReducer", state.postMoviesReducer);
     return state.postMoviesReducer;
   });
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,7 +28,8 @@ const ReduxAdvanced = () => {
   }, [dispatch]);
 
   let content = <p>No movies</p>;
-  if (getMoviesReducerLoading) {
+  if (getMoviesReducerLoading === "pending") {
+    console.log(getMoviesReducerLoading);
     content = <p>Loading...</p>;
   }
   if (getMoviesReducerError) {
